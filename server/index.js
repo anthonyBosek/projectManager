@@ -19,6 +19,9 @@ app.use(
   })
 );
 
-app.listen(port, console.log(`Server running on port ${port}`));
+app.listen(
+  port,
+  console.log(`Server running on port: ${port.blue.italic.bold}`)
+);
 // 28:18 - making queries w/ graphiql
 // sat 3/18 4:30pm
