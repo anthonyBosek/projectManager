@@ -15,6 +15,9 @@ code {
 .navbar-brand {
   color: #df3ca6;
 }
+.navbar-brand:hover {
+  color: #df3ca6;
+}
 
 .navbar-brand img {
   width: 30px;
