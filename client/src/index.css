@@ -5,11 +5,17 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #333;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.navbar {
+  border-bottom: 2px solid #df3ca6;
+  /* box-shadow: 0 0 4px #df3ca6, 0 0 14px whitesmoke; */
 }
 
 .navbar-brand {
@@ -50,4 +56,13 @@ code {
 
 .icon {
   margin-right: 5px;
+}
+
+.modal-content {
+  background: #333;
+  color: whitesmoke;
+  border: 1px solid #df3ca6;
+}
+hr {
+  border: 1px solid whitesmoke;
 }
