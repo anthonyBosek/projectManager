@@ -1,13 +1,15 @@
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
 import { useQuery } from "@apollo/client";
+import { FaEdit } from "react-icons/fa";
 import { GET_PROJECT } from "../queries/projectQueries";
 import Spinner from "../components/Spinner";
 import ClientInfo from "../components/ClientInfo";
-import EditProjectForm from "../components/EditProjectForm";
+// import EditProjectForm from "../components/EditProjectForm";
 import DeleteProjectButton from "../components/DeleteProjectButton";
 
 const Project = () => {
   const { id } = useParams();
+  const navigate = useNavigate();
   const { data, loading, error } = useQuery(GET_PROJECT, { variables: { id } });
 
   if (loading) return <Spinner />;
@@ -34,9 +36,16 @@ const Project = () => {
 
           <ClientInfo client={data.project.client} />
 
-          <EditProjectForm project={data.project} />
+          <div className="d-flex mt-5 ms-auto">
+            <button
+              className="btn btn-secondary btn-sm m-2"
+              onClick={() => navigate(`/edit/${id}`)}
+            >
+              <FaEdit className="icon" /> Edit Project
+            </button>
 
-          <DeleteProjectButton projectId={id} />
+            <DeleteProjectButton projectId={id} />
+          </div>
         </div>
       )}
     </>
