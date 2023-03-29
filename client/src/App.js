@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./views/Home";
 import Project from "./views/Project";
-import Edit from "./views/Edit";
+import EditProjectForm from "./views/Edit";
 import NotFound from "./views/NotFound";
 
 const cache = new InMemoryCache({
@@ -39,8 +39,8 @@ const App = () => {
           <div className="container">
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="project/:id" element={<Project />} />
-              <Route path="edit/:id" element={<Edit />} />
+              <Route path="/project/:id" element={<Project />} />
+              <Route path="/edit/:id" element={<EditProjectForm />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </div>
