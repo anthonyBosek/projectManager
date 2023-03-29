@@ -4,7 +4,6 @@ import { FaEdit } from "react-icons/fa";
 import { GET_PROJECT } from "../queries/projectQueries";
 import Spinner from "../components/Spinner";
 import ClientInfo from "../components/ClientInfo";
-// import EditProjectForm from "../components/EditProjectForm";
 import DeleteProjectButton from "../components/DeleteProjectButton";
 
 const Project = () => {
