@@ -4,7 +4,9 @@ import Header from "./components/Header";
 import Home from "./views/Home";
 import Project from "./views/Project";
 import EditProjectForm from "./views/Edit";
-import UpdateClient from "./components/UpdateClient";
+// import UpdateClient from "./components/UpdateClient";
+import Client from "./views/Client";
+import EditClient from "./views/EditClient";
 import NotFound from "./views/NotFound";
 
 const cache = new InMemoryCache({
@@ -41,8 +43,9 @@ const App = () => {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/project/:id" element={<Project />} />
-              <Route path="/edit/:id" element={<EditProjectForm />} />
-              <Route path="/update/client" element={<UpdateClient />} />
+              <Route path="/editProject/:id" element={<EditProjectForm />} />
+              <Route path="/client/:id" element={<Client />} />
+              <Route path="/editClient/:id" element={<EditClient />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </div>
