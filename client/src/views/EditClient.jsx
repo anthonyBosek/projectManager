@@ -1,7 +1,7 @@
-import React from "react";
+import UpdateClient from "../components/UpdateClient";
 
 const EditClient = () => {
-  return <div>EditClient</div>;
+  return <UpdateClient />;
 };
 
 export default EditClient;

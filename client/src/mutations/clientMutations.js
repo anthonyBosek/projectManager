@@ -11,7 +11,6 @@ const ADD_CLIENT = gql`
   }
 `;
 
-// added for testing purposes 4/3/23
 const UPDATE_CLIENT = gql`
   mutation updateClient(
     $id: ID!
@@ -27,7 +26,6 @@ const UPDATE_CLIENT = gql`
     }
   }
 `;
-//
 
 const DELETE_CLIENT = gql`
   mutation deleteClient($id: ID!) {
