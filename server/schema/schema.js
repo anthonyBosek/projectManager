@@ -92,8 +92,6 @@ const mutation = new GraphQLObjectType({
         return client.save();
       },
     },
-
-    // added for testing 4/3/23
     // Update Client
     updateClient: {
       type: ClientType,
@@ -117,8 +115,6 @@ const mutation = new GraphQLObjectType({
         );
       },
     },
-    //
-
     // Delete Client
     deleteClient: {
       type: ClientType,
