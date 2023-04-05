@@ -43,7 +43,9 @@ const App = () => {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/project/:id" element={<Project />} />
+              {/*  */}
               <Route path="/editProject/:id" element={<EditProjectForm />} />
+              {/*  */}
               <Route path="/client/:id" element={<Client />} />
               <Route path="/editClient/:id" element={<EditClient />} />
               <Route path="*" element={<NotFound />} />

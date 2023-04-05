@@ -38,7 +38,7 @@ const Project = () => {
           <div className="d-flex mt-5 ms-auto">
             <button
               className="btn btn-secondary btn-sm m-2"
-              onClick={() => navigate(`/edit/${id}`)}
+              onClick={() => navigate(`/editProject/${id}`)}
             >
               <FaEdit className="icon" /> Edit Project
             </button>
