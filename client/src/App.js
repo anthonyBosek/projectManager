@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./views/Home";
 import Project from "./views/Project";
-import EditProjectForm from "./views/Edit";
+import EditProject from "./views/EditProject";
 import Client from "./views/Client";
 import EditClient from "./views/EditClient";
 import NotFound from "./views/NotFound";
@@ -42,7 +42,7 @@ const App = () => {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/project/:id" element={<Project />} />
-              <Route path="/editProject/:id" element={<EditProjectForm />} />
+              <Route path="/editProject/:id" element={<EditProject />} />
               <Route path="/client/:id" element={<Client />} />
               <Route path="/editClient/:id" element={<EditClient />} />
               <Route path="*" element={<NotFound />} />
