@@ -5,7 +5,7 @@ import { GET_PROJECT } from "../queries/projectQueries";
 import { UPDATE_PROJECT } from "../mutations/projectMutations";
 import Spinner from "../components/Spinner";
 
-const EditProjectForm = () => {
+const EditProject = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const { data, loading, error } = useQuery(GET_PROJECT, { variables: { id } });
@@ -94,4 +94,4 @@ const EditProjectForm = () => {
   );
 };
 
-export default EditProjectForm;
+export default EditProject;
