@@ -9,7 +9,6 @@ const port = process.env.PORT || 5000;
 
 const app = express();
 
-// Connect to database
 connectDB();
 
 app.use(cors());
@@ -26,5 +25,3 @@ app.listen(
   port,
   console.log(`Server running on port: ${port.blue.italic.bold}`)
 );
-// 28:18 - making queries w/ graphiql
-// sat 3/18 4:30pm
