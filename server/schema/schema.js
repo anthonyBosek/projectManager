@@ -39,6 +39,7 @@ const ClientType = new GraphQLObjectType({
   }),
 });
 
+// Queries
 const RootQuery = new GraphQLObjectType({
   name: "RootQueryType",
   fields: {
