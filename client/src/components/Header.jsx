@@ -10,6 +10,12 @@ const Header = () => {
             <div>Project Tracker</div>
           </div>
         </a>
+        <div
+          className="align-right navbar-brand"
+          // style={{ fontFamily: "impact", color: "#333" }}
+        >
+          Anthony Bosek © 2023
+        </div>
       </div>
     </nav>
   );
