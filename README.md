@@ -63,4 +63,4 @@ cd client && npm i <packageName>
 
 ### contributor
 
-- Anthony Bosek
+- [Anthony Bosek](anthony-bosek.vercel.app)
