@@ -4,6 +4,8 @@
 
 # Development
 
+This project incorporates graphql and apollo client.
+
 ## Getting started
 
 - clone repository
@@ -61,6 +63,6 @@ npm i <packageName>
 cd client && npm i <packageName>
 ```
 
-### contributor
+### Contributor
 
 - [Anthony Bosek](anthony-bosek.vercel.app)
